@@ -6,17 +6,35 @@ root_request = (req, res) => {
   });
 }
 
-get_image = (req, res) => {}
+get_image = (req, res) => {
+  // Gets a single image that match with the given ID.
+  const id = req.params.id;
+}
 
-get_images = (req, res) => {}
+get_images = (req, res) => {
+  // Returns all the images stored. Only accessed by administrators
+}
 
-upload_image = (req, res) => {}
+upload_image = (req, res) => {
+  // Uploads a new image into the server
+}
 
-update_image = (req, res) => {}
+update_image = (req, res) => {
+  // Updates an existing image
+  const id = req.params.id;
+}
 
-remove_image = (req, res) => {}
+remove_image = (req, res) => {
+  // Removes an image from the server
+  const id = req.params.id;
+}
 
-image_not_found = (req, res) => {}
+image_not_found = (req, res) => {
+  // Returns a custom not found error
+  return res.status(404).message({
+    message: '¿Are you lost? There is no route like this one. Try something else.'
+  });
+}
 
 function Compressor () {
   return {
