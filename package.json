@@ -1,0 +1,29 @@
+{
+  "name": "imageservice",
+  "version": "0.0.1",
+  "description": "A microservice for uploading and requesting images ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrSleider/imageservice.git"
+  },
+  "keywords": [
+    "nodejs",
+    "microservice",
+    "image",
+    "uploader"
+  ],
+  "author": "Sleider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrSleider/imageservice/issues"
+  },
+  "homepage": "https://github.com/MrSleider/imageservice#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}
